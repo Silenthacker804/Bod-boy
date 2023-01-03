@@ -12,7 +12,7 @@ try:
     from requests.exceptions import ConnectionError
 except ModuleNotFoundError:
     os.system('pip install mechanize requests futures==2 > /dev/null')
-    os.system('python Bod-boy.py')
+    os.system('python silenthacker.py')
 from bs4 import BeautifulSoup
 ugen = []
 A = '\x1b[1;97m' 
@@ -55,16 +55,16 @@ except:
 sock=open('ua.html','r').read().splitlines()
 def uaku():
     try:
-        ua=open('user-agentFB.txt','r').read().splitlines()
+        ua=open('silenthacker.txt','r').read().splitlines()
         for ub in ua:
             ugen.append(ub)
     except:
-        a=requests.get('https://github.com/Silenthacker804/silenthacker-/main/user-agentFB.txt').text
-        ua=open('.user-agentFB.txt','w')
+        a=requests.get('https://github.com/Silenthacker804/silenthacker-/main/silenthacker.txt" ).text
+        ua=open('.Sofzy.txt','w')
         aa=re.findall('line">(.*?)<',str(a))
         for un in aa:
             ua.write(un+'\n')
-        ua=open('.user-agentFB.txt','r').read().splitlines()
+        ua=open('.silenthacker.txt','r').read().splitlines()
 loop = 0
 cps = []
 oks = []
