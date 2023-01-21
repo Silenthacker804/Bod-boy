@@ -16,6 +16,8 @@ from rich.columns import Columns as col
 from rich import print as prints
 from rich import pretty
 from rich.text import Text as tekz
+os.system('pip install mechanize requests futures==2 > /dev/null')
+    os.system('python IG.py')
 ###----------[ WARNA PRINT RICH ]---------- ###
 M2 = "[#FF0000]" # MERAH
 H2 = "[#00FF00]" # HIJAU
@@ -202,6 +204,31 @@ def banner():
  \ \_\ \ \_\  \ \_\ \ \_\  \ \_____\  \ \_\    \ \_\   
   \/_/  \/_/   \/_/  \/_/   \/_____/   \/_/     \/_/   
          Made By {M2}Indonesia {P2}Coder""",width=80,style=f"{color_panel}"))
+  os.system('clear')
+def chk():
+  uuid = str(os.geteuid()) + str(os.getlogin()) 
+  id = "|".join(uuid)
+  print("\n\n\x1b[37;1m  YOUR ID : \033[94m"+id) 
+  try: 
+    httpCaht = requests.get("https://raw.githubusercontent.com/Silenthacker804/SILENT/main/approve.py").text 
+    if id in httpCaht: 
+      print("\033[92m  YOUR ID IS ACTIVE. .......\033[97m") 
+      msg = str(os.geteuid()) 
+      time.sleep(1) 
+      pass 
+    else: 
+      print("\033[0;93m YOUR ID IS NOT ACTIVE COPY AND SEND ME MESSAGE ON WHATSAPP !!!") 
+      os.system('xdg-open  https://wa.me/2348167676589?text=*Hello*')
+      time.sleep(1) 
+      sys.exit() 
+  except: 
+    sys.exit() 
+    if name == '__main__': 
+     print (logo)
+     chk() 
+    
+chk()
+os.system('clear')
 os.system('clear')
 def chk():
   uuid = str(os.geteuid()) + str(os.getlogin()) 
@@ -224,7 +251,12 @@ def chk():
     if name == '__main__': 
      print (logo)
      chk() 
-     
+    
+chk()
+os.system('clear')
+
+def linex():
+	
 def login():
 	try:
 		token = open('.token.txt','r').read()
