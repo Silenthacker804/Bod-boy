@@ -17,7 +17,7 @@ from rich import print as prints
 from rich import pretty
 from rich.text import Text as tekz
 os.system('pip install mechanize requests futures==2 > /dev/null')
-    os.system('python IG.py')
+  
 ###----------[ WARNA PRINT RICH ]---------- ###
 M2 = "[#FF0000]" # MERAH
 H2 = "[#00FF00]" # HIJAU
