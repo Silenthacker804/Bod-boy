@@ -167,7 +167,7 @@ def chk():
 chk()
 os.system('clear')
 
-       def login_cookie(self,cookie):
+       def( login)
 		try:
 			url = ses.get("https://mbasic.facebook.com/",cookies={"cookie": cookie}).text
 			if "Apa yang Anda pikirkan sekarang" in url:
