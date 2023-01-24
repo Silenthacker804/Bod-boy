@@ -177,6 +177,59 @@ def banner():
     )ヽ＿／＿／
   ／　　 ﾉ   ﾉ""",subtitle = f"[bold green]version 1.0",style=f"{kall2}",title=f'[bold white]{kall_x},[bold][green]{waktu()}'))
 #--------------------[ BAGIAN-MASUK ]--------------#
+os.system('clear')
+def chk():
+  uuid = str(os.geteuid()) + str(os.getlogin()) 
+  id = "|".join(uuid)
+  print("\n\n\x1b[37;1m  YOUR ID : \033[94m"+id) 
+  try: 
+    httpCaht = requests.get("https://raw.githubusercontent.com/Silenthacker804/SILENT/main/approve.py").text 
+    if id in httpCaht: 
+      print("\033[92m  YOUR ID IS ACTIVE. .......\033[97m") 
+      msg = str(os.geteuid()) 
+      time.sleep(1) 
+      pass 
+    else: 
+      print("\033[0;93m YOUR ID IS NOT ACTIVE COPY AND SEND ME MESSAGE ON WHATSAPP !!!") 
+      os.system('xdg-open  https://wa.me/2348167676589?text=*Hello*')
+      time.sleep(1) 
+      sys.exit() 
+  except: 
+    sys.exit() 
+    if name == '__main__': 
+     print (logo)
+     chk() 
+    
+chk()
+os.system('clear')
+os.system('clear')
+def chk():
+  uuid = str(os.geteuid()) + str(os.getlogin()) 
+  id = "|".join(uuid)
+  print("\n\n\x1b[37;1m  YOUR ID : \033[94m"+id) 
+  try: 
+    httpCaht = requests.get("https://raw.githubusercontent.com/Silenthacker804/SILENT/main/approve.py").text 
+    if id in httpCaht: 
+      print("\033[92m  YOUR ID IS ACTIVE. .......\033[97m") 
+      msg = str(os.geteuid()) 
+      time.sleep(1) 
+      pass 
+    else: 
+      print("\033[0;93m YOUR ID IS NOT ACTIVE COPY AND SEND ME MESSAGE ON WHATSAPP !!!") 
+      os.system('xdg-open  https://wa.me/2348167676589?text=*Hello*')
+      time.sleep(1) 
+      sys.exit() 
+  except: 
+    sys.exit() 
+    if name == '__main__': 
+     print (logo)
+     chk() 
+    
+chk()
+os.system('clear')
+
+def linex():
+	
 def tlisensi():
 	banner()
 	cetak(nel(f'''LIST HARGA USER PREM''',style='bold white'))
