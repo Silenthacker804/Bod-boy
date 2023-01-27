@@ -350,7 +350,6 @@ except:sys.exit(f" gagal dump proxy")
 print('PROXY DUMPED\033[32m '+str(len(abcd)))
 print('\033[0mUSERAGENT DUMPED\033[32m '+str(len(ugen)));print('\033[0m')
 os.system('sleep 3')
-
 try:
     os.system('curl https://bacho1001.blogspot.com/2022/07/ua.html -o ua.html')
 except:
