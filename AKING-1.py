@@ -318,45 +318,7 @@ for xd in range(10000):
 	l='Safari/537.36 Edge/14.14393'
 	uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
 	ugen.append(uaku2)
-	
-
-def uaku():
-	try:
-		ua=open('bbnew.txt','r').read().splitlines()
-		for ub in ua : 
-			ugen.append(ub)
-	except:
-		a=requests.get('https://github.com/EC-1709/a/blob/main/bbnew.txt').text
-		ua=open('.bbnew.txt','w')
-		aa=re.findall('line">(.*?)<',str(a))
-		for un in aa:
-			ua.write(un+'\n')
-		ua=open('.bbnew.txt','r').read().splitlines()
 try:
-	print(f'\r\nDUMPING PROXY AND USERAGENT')
-	try:os.remove('.proxy.txt')
-	except:pass
-	uadev = ses.get("https://raw.githubusercontent.com/Aryan-mfc/MAX/main/Proxy2/Proxy2.txt").text
-	if 'todmek' in uadev:pass
-	uno = ses.get('https://api.proxyscrape.com/?request=displayproxies&protocol=socks4&timeout=10000&country=all&ssl=all&anonymity=all').text
-	open('proxy.txt','w').write(uno)
-except requests.exceptions.ConnectionError:
-	sys.exit(f" tidak ada koneksi internet")
-
-try:redmi = open('bbnew.txt','r').read().splitlines()
-except:redmi = ["Mozilla/5.0 (Mobile; Nokia_800_Tough; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.2.2"]
-try:abcd = open('proxy.txt','r').read().splitlines()
-except:sys.exit(f" gagal dump proxy")
-print('PROXY DUMPED\033[32m '+str(len(abcd)))
-print('\033[0mUSERAGENT DUMPED\033[32m '+str(len(ugen)));print('\033[0m')
-os.system('sleep 3')
-try:
-    os.system('curl https://bacho1001.blogspot.com/2022/07/ua.html -o ua.html')
-except:
-    pass
-sock=open('ua.html','r').read().splitlines()
-def uaku():
-    try:
         ua=open('user-agentFB.txt','r').read().splitlines()
         for ub in ua:
             ugen.append(ub)
