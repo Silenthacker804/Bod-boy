@@ -47,7 +47,6 @@ for xd in range(10000):
 	k='Mobile Safari/535.1'
 	uaku=(f'{a}{b}.{c} {d}{e}{f}{g}.{h}.{i}.{j} {k}')
 	ugen2.append(uaku)
-	
 
 	aa='Mozilla/5.0 (Windows NT 10.0;'
 	b=random.choice(['6','7','8','9','10','11','12'])
